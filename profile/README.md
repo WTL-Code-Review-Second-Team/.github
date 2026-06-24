@@ -1,76 +1,152 @@
-선택한 주제
-주제: CS (Java/JVM/JDK 중심)
-선택 이유: Java는 문법만 익혀도 개발은 가능하지만, JVM과 JDK까지 이해하면
-성능, 메모리, 컴파일/실행 과정, 디버깅에 대한 설명력이 크게 올라갑니다.
-스터디 형식: 주 1회 발표 + 주간 과제 + PR 리뷰
-스터디 대상과 수준
-대상: Java 기본 문법, 클래스, 객체지향 개념을 알고 있는 사람
-수준: 초급 후반 ~ 중급 초반
-전제 지식: 변수, 조건문, 반복문, 클래스, 메서드, 컬렉션 기초
-목표
-Java 소스가 .class 파일로 바뀌고 JVM에서 실행되는 흐름을 설명한다.
-JDK, JRE, JVM의 역할 차이를 구분한다.
-메모리 구조, GC, class loading, bytecode 기초를 이해한다.
-공식 문서와 레퍼런스를 읽고 요약하는 습관을 만든다.
-4주 계획
-1주차: Java 전체 구조 이해
-세부 주제JDK, JRE, JVM 차이
-Java 컴파일과 실행 흐름
-javac, java, jar 기본 사용
+<div align="center">
 
-스터디 목표Java 프로그램이 어떤 단계로 실행되는지 말할 수 있다.
+# ☕ CS Study
+# Java · JVM · JDK
 
-산출물"Java 실행 흐름 1장 요약"
-Hello World를 통해 컴파일/실행 과정 실습
+> **Java 문법을 넘어 실행 원리까지 이해하는 4주 스터디**
 
-2주차: JVM과 바이트코드
-세부 주제.class 파일 구조 개요
-bytecode란 무엇인가
-class loader의 역할
+![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
+![Study](https://img.shields.io/badge/Study-4Weeks-blue)
+![Level](https://img.shields.io/badge/Level-Beginner~Intermediate-success)
+![License](https://img.shields.io/badge/Docs-GitHub%20Pages-brightgreen)
 
-스터디 목표소스 코드와 바이트코드, JVM 역할을 구분할 수 있다.
+</div>
 
-산출물javap로 바이트코드 확인 후 해설
-클래스 로딩 과정을 그림으로 정리
+---
 
-3주차: 메모리와 GC
-세부 주제stack, heap, method area 개념
-GC가 필요한 이유
-대표적인 GC 용어 이해
+# 📚 목차
 
-스터디 목표객체가 어디에 생성되고 왜 GC가 필요한지 설명할 수 있다.
+- [📖 스터디 소개](#-스터디-소개)
+- [🎯 스터디 목표](#-스터디-목표)
+- [🗓️ 4주 스터디 계획](#️-4주-스터디-계획)
+- [👨‍💻 운영 방식](#-운영-방식)
+- [📚 레퍼런스](#-레퍼런스)
+- [📂 GitHub 구성](#-github-구성)
+- [🤖 AI 활용 기록](#-ai-활용-기록)
 
-산출물메모리 구조 다이어그램
-GC 핵심 용어 정리표
+---
 
-4주차: 실전 정리와 회고
-세부 주제자주 헷갈리는 개념 정리
-JVM 관점에서 코드 읽기
-면접 질문 형태로 복습
+# 📖 스터디 소개
 
-스터디 목표Java/JVM/JDK 개념을 연결해서 말할 수 있다.
+Java 문법을 넘어서,
 
-산출물최종 발표 자료
-회고 및 다음 단계 학습 계획
+> **"Java 코드가 어떻게 실행되는가?"**
 
-운영 방식
-매주 1명 또는 1팀이 발표
-나머지 구성원은 질문 2개 이상 준비
-발표자는 정리 문서와 예제 코드를 PR로 제출
-리뷰는 Issue/PR 템플릿을 활용
-레퍼런스
-아래 자료를 우선 추천합니다.
-Java Language Specification
-Java 문법과 언어 규칙의 공식 기준입니다. "왜 이 문법이 가능한가"를 확인하기 좋습니다.
+를 이해하기 위한 CS 스터디입니다.
 
-Java Virtual Machine Specification
-JVM, class file, bytecode, 실행 모델을 공식적으로 설명합니다.
+Java를 한 번 이상 학습한 사람을 대상으로
 
-Java SE Documentation
-javac, java, jar, javadoc 등 JDK 도구와 표준 API를 확인할 수 있습니다.
+- ☕ Java 실행 구조
+- ⚙ JVM
+- 📦 JDK / JRE
+- 🧠 메모리 구조
+- ♻ Garbage Collection
+- 📄 Bytecode
 
-OpenJDK
-실제 JDK 구현과 릴리스 흐름을 이해하는 데 도움이 됩니다.
+까지 연결해서 학습합니다.
 
-Effective Java, 3rd Edition
-문법을 넘어 Java를 "잘 쓰는 법"을 익히는 보조 자료로 적합합니다.
+---
+
+# 👀 한눈에 보기
+
+| 항목 | 내용 |
+|------|------|
+| 📌 선택 주제 | **CS (Java/JVM/JDK 중심)** |
+| 👨‍🏫 형식 | 발표 + 과제 + PR 리뷰 |
+| 👨‍💻 대상 | Java 기본 문법 학습자 |
+| ⭐ 수준 | 초급 후반 ~ 중급 초반 |
+| 🎯 목표 | JVM 실행 흐름을 설명할 수 있는 수준 |
+
+---
+
+# ❓ 왜 이 주제인가?
+
+## 🚀 Java를 "사용"하는 것과 "이해"하는 것은 다릅니다.
+
+많은 개발자가 Java 문법은 알고 있지만
+
+- JVM이 무엇인지
+- 메모리가 어떻게 동작하는지
+- GC가 언제 실행되는지
+
+설명하지 못합니다.
+
+이 스터디에서는
+
+**문법 → 실행 구조 → 메모리 → 성능**
+
+까지 연결해서 학습합니다.
+
+---
+
+# 🎯 스터디 목표
+
+✅ Java 실행 과정을 설명할 수 있다.
+
+✅ JDK / JRE / JVM 차이를 설명할 수 있다.
+
+✅ Bytecode와 Class Loading을 이해한다.
+
+✅ Stack / Heap / GC를 연결해서 설명할 수 있다.
+
+✅ 공식 문서를 읽는 습관을 만든다.
+
+---
+
+# 🗓️ 4주 스터디 계획
+
+| 주차 | 주제 | 목표 | 결과물 |
+|------|------|------|---------|
+| 📅 Week1 | Java 실행 구조 | 컴파일부터 실행까지 이해 | 실행 흐름 정리 |
+| 📅 Week2 | JVM & Bytecode | Class Loader와 Bytecode 이해 | javap 분석 |
+| 📅 Week3 | Memory & GC | Stack / Heap / GC 이해 | 메모리 다이어그램 |
+| 📅 Week4 | Review | JVM 관점으로 코드 읽기 | 발표 자료 |
+
+---
+
+# 🗺️ 학습 흐름
+
+```text
+Java Source (.java)
+        │
+        ▼
+ javac Compiler
+        │
+        ▼
+Bytecode (.class)
+        │
+        ▼
+   JVM
+        │
+        ▼
+ Class Loader
+        │
+        ▼
+ Runtime Data Area
+        │
+        ▼
+ Garbage Collector
+        │
+        ▼
+ Program Execution
+```
+
+---
+
+# 👨‍💻 운영 방식
+
+### 📢 발표
+
+- 매주 1명 발표
+- 발표 자료 업로드
+
+### 💬 토론
+
+- 질문 2개 이상 준비
+- 발표 후 토론
+
+### 🔀 GitHub
+
+- Issue 작성
+- PR 제출
+- 코드 리뷰 진행
