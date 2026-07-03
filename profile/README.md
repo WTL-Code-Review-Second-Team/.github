@@ -1,4 +1,4 @@
-<div align="center">
+
 
 # ☕ CS Study
 # Java 
